@@ -29,10 +29,5 @@ async def z(ctx):
 @client.event
 async def on_voice_state_update(member, before):
      await ctx.send('誰かがボイスチャンネルに接続したよ')
-        
-@client.event
-async def on_message(message):
-    if client.user in message.mentions: # 話しかけられたかの判定
-        await ctx.send('呼んだ?...Zzz')
 
 bot.run(token)
