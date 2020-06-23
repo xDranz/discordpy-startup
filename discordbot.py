@@ -15,7 +15,8 @@ async def on_command_error(ctx, error):
 
 @bot.command()
 async def z(ctx):
-    await ctx.send('何優天然')
+    await ctx.send(':poop: 何優天然:poop::poop: 何優天然:poop::poop: 何優天然:poop::poop: 何優天然:poop:')
+    await ctx.send(':poop: 何優天然:poop::poop: 何優天然:poop::poop: 何優天然:poop::poop: 何優天然:poop:')
     
 @bot.command()
 async def q(ctx):
