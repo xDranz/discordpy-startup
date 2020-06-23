@@ -26,8 +26,8 @@ async def z(ctx):
     await ctx.send(':poop: 何優天然:poop::poop: 何優天然:poop::poop: 何優天然:poop::poop: 何優天然:poop:')
     await ctx.send(':poop: 何優天然:poop::poop: 何優天然:poop::poop: 何優天然:poop::poop: 何優天然:poop:')
     
-@bot.command()
-async def q(ctx):
-    await ctx.send('test')
+@client.event
+async def on_voice_state_update(member, before):
+     await ctx.send('ボイスチャンネルに接続したよ')
 
 bot.run(token)
