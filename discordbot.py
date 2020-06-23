@@ -29,5 +29,12 @@ async def z(ctx):
 @client.event
 async def on_voice_state_update(member, before):
      await ctx.send('ボイスチャンネルに接続したよ')
+        
+@client.event
+async def on_message(ctx):
+   if ctx.author.bot:　　　　　　　　　　　　　　　
+       return #発言者がBOTなら無視
+   if message.content == 'test_bot':　　　　 #発言に返信する
+       await ctx.channel.send('呼んだ?') #返信内容は''で括る。
 
 bot.run(token)
