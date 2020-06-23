@@ -28,6 +28,6 @@ async def z(ctx):
     
 @client.event
 async def on_voice_state_update(member, before):
-     await ctx.send('誰かがボイスチャンネルに接続したよ')
+     await member.send('誰かがボイスチャンネルに接続したよ')
 
 bot.run(token)
