@@ -18,7 +18,7 @@ async def z(ctx):
     await ctx.send('何優天然')
     
 @bot.command()
-async def (ctx):
+async def q(ctx):
     await ctx.send('test')
 
 bot.run(token)
