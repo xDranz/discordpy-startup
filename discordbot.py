@@ -19,7 +19,7 @@ async def n(ctx):
     
 @bot.command()
 async def t(ctx):
-    await ctx.send('何優天然')
+    await ctx.send('test')
 
 
 bot.run(token)
