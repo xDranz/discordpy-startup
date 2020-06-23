@@ -16,6 +16,10 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def n(ctx):
     await ctx.send('何優天然')
+    
+@bot.command()
+async def t(ctx):
+    await ctx.send('何優天然')
 
 
 bot.run(token)
