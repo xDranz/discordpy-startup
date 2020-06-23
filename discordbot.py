@@ -2,7 +2,7 @@ from discord.ext import commands
 import os
 import traceback
 
-bot = commands.Bot(command_prefix='/')
+bot = commands.Bot(command_prefix='.')
 token = os.environ['DISCORD_BOT_TOKEN']
 
 
@@ -14,12 +14,11 @@ async def on_command_error(ctx, error):
 
 
 @bot.command()
-async def n(ctx):
+async def z(ctx):
     await ctx.send('何優天然')
     
 @bot.command()
-async def t(ctx):
+async def (ctx):
     await ctx.send('test')
-
 
 bot.run(token)
